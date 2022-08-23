@@ -4,17 +4,95 @@
     <data>
 
     </data>
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".detailsFragment">
+        tools:context=".detailsFragment"
+        android:orientation="vertical">
 
         <!-- TODO: Update blank fragment layout -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment" />
 
-    </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shoe Name"
+            android:layout_marginTop="15sp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter The Shoe Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:layout_marginTop="15sp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"/>
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Company"
+            android:layout_marginTop="15sp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter The Company Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:layout_marginTop="15sp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"/>
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shoe Size"
+            android:layout_marginTop="15sp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter The Shoe Size"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:layout_marginTop="15sp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"/>
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginTop="15sp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:layout_marginTop="15sp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"/>
+    </LinearLayout>
 
 </layout>
