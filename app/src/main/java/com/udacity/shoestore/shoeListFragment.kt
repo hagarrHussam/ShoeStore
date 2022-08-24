@@ -31,6 +31,7 @@ class shoeListFragment : Fragment() {
             if(it.isNotEmpty())
                 createShoes(it);
         })
+        binding.lifecycleOwner= viewLifecycleOwner
         binding.floatingActionButton.setOnClickListener{
             Navigation.findNavController(it).navigate(R.id.action_shoeListFragment_to_detailsFragment)
         }
@@ -48,6 +49,7 @@ class shoeListFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return NavigationUI.onNavDestinationSelected(item, requireView().findNavController())
                 || super.onOptionsItemSelected(item)}
+
     private fun createShoes(shoes: List<Shoe>) {
         context?.let { context ->
             val shoeContainer = binding.shoeList
