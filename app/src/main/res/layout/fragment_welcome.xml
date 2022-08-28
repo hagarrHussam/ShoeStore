@@ -2,9 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" >
-    <data>
-
-    </data>
+    <!-- Used Constraint layout here because It helps to be seamless across wide range of screen.  -->
 
     <LinearLayout
         android:layout_width="match_parent"

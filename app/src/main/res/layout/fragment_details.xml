@@ -7,6 +7,8 @@
             type="com.udacity.shoestore.ShoeListViewModel" />
 
     </data>
+    <!--    linear layout is used because it is easier to connect child with each other  -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -32,6 +34,7 @@
             android:ems="10"
             android:hint="Enter The Shoe Name"
             android:inputType="textPersonName"
+            android:text="@={viewModel.shoeName}"
             android:minHeight="48dp"
             android:layout_marginTop="15sp"
             android:textSize="20sp"
@@ -51,6 +54,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Enter The Company Name"
+            android:text="@={viewModel.shoeCompany}"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:layout_marginTop="15sp"
@@ -71,6 +75,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Enter The Shoe Size"
+            android:text="@={viewModel.shoeSize}"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:layout_marginTop="15sp"
@@ -91,6 +96,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Description"
+            android:text="@={viewModel.shoeDescription}"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:layout_marginTop="15sp"
